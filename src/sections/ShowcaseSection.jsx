@@ -38,7 +38,7 @@ const ShowcaseSection = () => {
     return (
         <section id="trabalho" ref={sectionRef} className="app-showcase">
             <div className="w-full">
-                <div className="showcaselayout grid md:grid-cols-2 gap-6">
+                <div className="showcaselayout grid md:grid-cols-2 md:grid-rows-2 gap-6">
                     {projects.map((project, index) => (
                         <a
                             key={project.id}
@@ -46,7 +46,8 @@ const ShowcaseSection = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             ref={(el) => (projectsRef.current[index] = el)}
-                            className="project block cursor-pointer transition-transform hover:scale-105"
+                            className={`project block cursor-pointer transition-transform hover:scale-105 ${index === 0 ? "md:row-span-2" : ""
+                                }`}
                         >
                             <div
                                 className="image-wrapper rounded-2xl overflow-hidden"

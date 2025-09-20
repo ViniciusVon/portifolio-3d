@@ -279,27 +279,27 @@ const projects = [
         title: "BrubyScore - App de Ligas e Resultados de Futebol",
         description:
             "Aplicativo mobile desenvolvido com React Native, Gluestack, Typescript e TailwindCSS para acompanhar ligas e resultados de futebol em tempo real.",
-        image: "/images/brubyscore.png",
+        image: "/images/brubyscore-prototipo.png",
         bg: "#ffffff",
-        repo: "https://github.com/seu-usuario/brubyscore",
+        repo: "https://github.com/ViniciusVon/Brubyscore",
     },
     {
         id: 2,
         title: "Website para Arquiteta Vanessa von Glehn",
         description:
             "Website desenvolvido utilizando Typescript no frontend e Java no backend, focado em apresentar os projetos e portfólio da arquiteta Vanessa von Glehn.",
-        image: "/images/vanessa.png",
+        image: "/images/mentoria-vanessa.png",
         bg: "#ffefdb",
-        repo: "https://github.com/seu-usuario/site-vanessa",
+        repo: "https://site-vanessa-von-glehn.vercel.app",
     },
     {
         id: 3,
         title: "Monitoramento da Placa de Rede",
         description:
             "Projeto acadêmico para disciplina de Redes na faculdade de Ciência da Computação. Utiliza Docker para monitorar e analisar tráfego da placa de rede.",
-        image: "/images/network.png",
+        image: "/images/network-monitor-prototipo.png",
         bg: "#ffe7db",
-        repo: "https://github.com/seu-usuario/network-monitor",
+        repo: "https://github.com/ViniciusVon/network-monitor",
     },
 ];
 

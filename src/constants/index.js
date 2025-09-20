@@ -1,19 +1,19 @@
 const navLinks = [
     {
-        name: "Work",
-        link: "#work",
+        name: "Trabalho",
+        link: "#trabalho",
     },
     {
-        name: "Experience",
-        link: "#experience",
+        name: "Experiência",
+        link: "#experiencia",
     },
     {
         name: "Skills",
         link: "#skills",
     },
     {
-        name: "Testimonials",
-        link: "#testimonials",
+        name: "Depoimentos",
+        link: "#depoimentos",
     },
 ];
 
@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-    { value: 15, suffix: "+", label: "Years of Experience" },
-    { value: 200, suffix: "+", label: "Satisfied Clients" },
-    { value: 108, suffix: "+", label: "Completed Projects" },
-    { value: 90, suffix: "%", label: "Client Retention Rate" },
+    { value: 2, suffix: "+", label: "Anos de Experiência" },
+    { value: 10, suffix: "+", label: "Clientes Satisfeitos" },
+    { value: 15, suffix: "+", label: "Projetos Completos" },
+    { value: 90, suffix: "%", label: "Retenção de Cliente" },
 ];
 
 const logoIconsList = [
@@ -74,18 +74,18 @@ const logoIconsList = [
 const abilities = [
     {
         imgPath: "/images/seo.png",
-        title: "Quality Focus",
-        desc: "Delivering high-quality results while maintaining attention to every detail.",
+        title: "Foco na Qualidade",
+        desc: "Entregando resultados de alta qualidade, com atenção a cada detalhe.",
     },
     {
         imgPath: "/images/chat.png",
-        title: "Reliable Communication",
-        desc: "Keeping you updated at every step to ensure transparency and clarity.",
+        title: "Comunicação Confiável",
+        desc: "Mantendo você atualizado em cada etapa para garantir transparência e clareza.",
     },
     {
         imgPath: "/images/time.png",
-        title: "On-Time Delivery",
-        desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+        title: "Entrega no Prazo",
+        desc: "Garantindo que os projetos sejam concluídos dentro do prazo, com qualidade e atenção aos detalhes.",
     },
 ];
 
@@ -97,6 +97,10 @@ const techStackImgs = [
     {
         name: "Python Developer",
         imgPath: "/images/logos/python.svg",
+    },
+    {
+        name: "Java Developer",
+        imgPath: "/images/logos/node.png",
     },
     {
         name: "Backend Developer",
@@ -126,7 +130,13 @@ const techStackIcons = [
         rotation: [0, 0, 0],
     },
     {
-        name: "Backend Developer",
+        name: "Java Developer",
+        modelPath: "/models/java.glb",
+        scale: 1.5,
+        rotation: [0, -Math.PI / 2, 0],
+    },
+    {
+        name: "Node Developer",
         modelPath: "/models/node-transformed.glb",
         scale: 5,
         rotation: [0, -Math.PI / 2, 0],
@@ -148,41 +158,49 @@ const techStackIcons = [
 const expCards = [
     {
         review:
-            "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-        imgPath: "/images/exp1.png",
-        logoPath: "/images/logo1.png",
-        title: "Frontend Developer",
-        date: "January 2023 - Present",
+            "Durante meu estágio na Telebrás, desenvolvi e automatizei sistemas essenciais, garantindo eficiência e segurança no gerenciamento de dados.",
+        imgPath: "/images/trademark-telebras.webp",
+        logoPath: "/images/logo-telebras.png",
+        title: "Estagiário",
+        date: "Novembro 2023 - Novembro 2024",
         responsibilities: [
-            "Developed and maintained user-facing features for the Hostinger website.",
-            "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-            "Optimized web applications for maximum speed and scalability.",
+            "Desenvolvimento de sistema de gerenciamento e monitoramento de dados comerciais de circuitos usando JavaScript, HTML, CSS e PHP com MySQL.",
+            "Criação e consumo de APIs, com testes de endpoints realizados no Postman.",
+            "Implementação de autenticação via LDAP e utilização de JWT para controle de acesso seguro.",
+            "Automação de processos manuais em planilhas usando Python e Google Colab, integrando dados ao Looker Studio.",
+            "Participação em treinamentos internos sobre LGPD, adquirindo conhecimento em privacidade e proteção de dados.",
         ],
     },
     {
         review:
-            "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-        imgPath: "/images/exp2.png",
-        logoPath: "/images/logo2.png",
-        title: "Full Stack Developer",
-        date: "June 2020 - December 2023",
+            "Na Lançamento Brasil, contribui para a manutenção e evolução de sistemas de mensageria, além de migrar e modernizar aplicações legadas.",
+        imgPath: "/images/lancamento_brasil_cover.jpeg",
+        logoPath: "/images/lancamento_brasil_cover.jpeg",
+        title: "Desenvolvedor Full Stack",
+        date: "Novembro 2024 - Setembro 2025",
         responsibilities: [
-            "Led the development of Docker's web applications, focusing on scalability.",
-            "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-            "Contributed to open-source projects that were used with the Docker ecosystem.",
+            "Manutenção e desenvolvimento de sistemas de mensageria via WhatsApp usando TypeScript, Node.js e React.",
+            "Aprendizado e utilização de tecnologias como Redis, Google Cloud Storage (Buckets) e Nginx.",
+            "Testes de APIs com Postman e implementação de novas funcionalidades.",
+            "Trabalhos envolvendo RabbitMQ, PostgreSQL e Docker.",
+            "Experiência com CI/CD, Linux e arquitetura MVC.",
+            "Migração de sistemas: manutenção de Django e reimplementação em Node.js com TypeScript.",
         ],
     },
     {
         review:
-            "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-        imgPath: "/images/exp3.png",
-        logoPath: "/images/logo3.png",
-        title: "React Native Developer",
-        date: "March 2019 - May 2020",
+            "Na Agendup, implementei soluções de backend eficientes, garantindo integração confiável com front-end e escalabilidade do sistema.",
+        imgPath: "/images/logo-agendup.webp",
+        logoPath: "/images/logo-agendup.webp",
+        title: "Desenvolvedor Back-end",
+        date: "Janeiro 2025 - Presente",
         responsibilities: [
-            "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-            "Improved app performance and user experience through code optimization and testing.",
-            "Coordinated with the product team to implement features based on feedback.",
+            "Implementação de backend para novo sistema utilizando PHP (Laravel), aplicando boas práticas de arquitetura.",
+            "Modelagem e estruturação de dados com DTO (Data Transfer Objects) para otimização do fluxo de informações.",
+            "Integração com front-end, assegurando comunicação eficiente entre camadas.",
+            "Containerização do ambiente com Docker, garantindo padronização e portabilidade.",
+            "Testes e validação de APIs com Postman, assegurando qualidade e confiabilidade nas entregas.",
+            "Controle de versionamento e integração contínua utilizando GitLab.",
         ],
     },
 ];
@@ -204,71 +222,87 @@ const expLogos = [
 
 const testimonials = [
     {
-        name: "Esther Howard",
-        mentions: "@estherhoward",
+        name: "Matheus Nunes",
+        mentions: "@matheusnunes",
         review:
-            "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+            "Tive a oportunidade de estagiar ao lado do Vinícius na Telebras, e foi uma experiência que marcou muito meu aprendizado. Ele sempre demonstrou uma facilidade enorme em entender problemas complexos e transformá-los em soluções práticas e bem estruturadas. Sua dedicação e curiosidade em aprender novas tecnologias fizeram toda a diferença em nossa rotina, e não tenho dúvidas de que ele será um grande profissional na área de desenvolvimento.",
         imgPath: "/images/client1.png",
     },
     {
-        name: "Wade Warren",
-        mentions: "@wadewarren",
+        name: "Vitor Costa",
+        mentions: "@vitorcosta",
         review:
-            "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+            "Conheço o Vinícius desde o período de estágio, quando tive a oportunidade de supervisionar seu trabalho. Desde aquela época já demonstrava muito talento e proatividade. Hoje trabalhamos juntos no time de backend do projeto AgendUp, e posso afirmar com tranquilidade que sua evolução é notável. Ele alia responsabilidade, visão técnica e um espírito colaborativo que tornam qualquer equipe mais forte.",
         imgPath: "/images/client3.png",
     },
     {
-        name: "Guy Hawkins",
-        mentions: "@guyhawkins",
+        name: "Felipe Hora",
+        mentions: "@felipehora",
         review:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+            "No AgendUp, trabalhar com o Vinícius é sempre motivador. Ele é extremamente esforçado, comprometido e consegue entregar tudo dentro do prazo necessário, sem perder a qualidade. Sempre disposto a ajudar e aprender, o Vinícius mostra um entusiasmo que contagia a equipe e eleva o nível do projeto.",
         imgPath: "/images/client2.png",
     },
     {
-        name: "Marvin McKinney",
-        mentions: "@marvinmckinney",
+        name: "Luis Gustavo",
+        mentions: "@luisgustavo",
         review:
-            "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+            "Compartilhar o dia a dia de desenvolvimento com o Vinícius é uma experiência muito positiva. Ele sempre busca entender o problema a fundo e não mede esforços para entregar soluções completas no prazo certo. Sua disciplina, dedicação e capacidade de trabalhar bem em equipe são qualidades que fazem toda a diferença em projetos como o AgendUp.",
+        imgPath: "/images/client6.png",
+    },
+    {
+        name: "Davi Serra",
+        mentions: "@daviserra",
+        review:
+            "Trabalhar com o Vinícius foi ótimo. Ele sempre buscou criar soluções criativas e funcionais, entregando resultados de alta qualidade e que agregaram muito ao projeto. A dedicação e a boa comunicação dele tornam a colaboração muito mais fácil e produtiva.",
         imgPath: "/images/client5.png",
     },
     {
-        name: "Floyd Miles",
-        mentions: "@floydmiles",
+        name: "Rafael Augusto",
+        mentions: "@rafaelaugusto",
         review:
-            "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+            "O Vinícius é um profissional de destaque no desenvolvimento. Sua capacidade de unir boa arquitetura, performance e usabilidade resulta em soluções que realmente fazem diferença. Sempre comprometido e com olhar estratégico, é alguém que contribui muito para qualquer equipe de tecnologia.",
         imgPath: "/images/client4.png",
-    },
-    {
-        name: "Albert Flores",
-        mentions: "@albertflores",
-        review:
-            "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
-        imgPath: "/images/client6.png",
     },
 ];
 
 const socialImgs = [
     {
-        name: "insta",
-        url: "https://www.instagram.com/",
-        imgPath: "/images/insta.png",
-    },
-    {
-        name: "fb",
-        url: "https://www.facebook.com/",
-        imgPath: "/images/fb.png",
-    },
-    {
-        name: "x",
-        url: "https://www.x.com/",
-        imgPath: "/images/x.png",
-    },
-    {
         name: "linkedin",
-        url: "https://www.linkedin.com/",
+        url: "www.linkedin.com/in/vinicius-von-glehn-severo-171684225",
         imgPath: "/images/linkedin.png",
     },
 ];
+
+const projects = [
+    {
+        id: 1,
+        title: "BrubyScore - App de Ligas e Resultados de Futebol",
+        description:
+            "Aplicativo mobile desenvolvido com React Native, Gluestack, Typescript e TailwindCSS para acompanhar ligas e resultados de futebol em tempo real.",
+        image: "/images/brubyscore.png",
+        bg: "#ffffff",
+        repo: "https://github.com/seu-usuario/brubyscore",
+    },
+    {
+        id: 2,
+        title: "Website para Arquiteta Vanessa von Glehn",
+        description:
+            "Website desenvolvido utilizando Typescript no frontend e Java no backend, focado em apresentar os projetos e portfólio da arquiteta Vanessa von Glehn.",
+        image: "/images/vanessa.png",
+        bg: "#ffefdb",
+        repo: "https://github.com/seu-usuario/site-vanessa",
+    },
+    {
+        id: 3,
+        title: "Monitoramento da Placa de Rede",
+        description:
+            "Projeto acadêmico para disciplina de Redes na faculdade de Ciência da Computação. Utiliza Docker para monitorar e analisar tráfego da placa de rede.",
+        image: "/images/network.png",
+        bg: "#ffe7db",
+        repo: "https://github.com/seu-usuario/network-monitor",
+    },
+];
+
 
 export {
     words,
@@ -282,4 +316,5 @@ export {
     techStackIcons,
     techStackImgs,
     navLinks,
+    projects
 };

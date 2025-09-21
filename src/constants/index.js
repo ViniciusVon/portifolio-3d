@@ -192,7 +192,7 @@ const expCards = [
             "Na Agendup, implementei soluções de backend eficientes, garantindo integração confiável com front-end e escalabilidade do sistema.",
         imgPath: "/images/logo-agendup.webp",
         logoPath: "/images/logo-agendup.webp",
-        title: "Desenvolvedor Back-end",
+        title: "Desenvolvedor Back-end (Freelance)",
         date: "Janeiro 2025 - Presente",
         responsibilities: [
             "Implementação de backend para novo sistema utilizando PHP (Laravel), aplicando boas práticas de arquitetura.",
